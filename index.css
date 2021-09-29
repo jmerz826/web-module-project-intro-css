@@ -4,6 +4,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* font-family: 'Chelsea Market', cursive;
+font-family: 'Roboto Mono', monospace; */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,18 +35,38 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    
+}
+
+html{
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav{
+    padding:2%;
+}
+
+nav a{
+    display:inline-block;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.orange{
+    background-color: #FF764E;
+}
+.blue{
+    background-color: #5ED3EB;
+}
+.yellow{
+    background-color: #FFCD69;
 }
