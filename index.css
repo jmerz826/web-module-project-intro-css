@@ -20,10 +20,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	/* margin: 0; */
+	margin: 0;
 	padding: 0;
-	border: 0;
-	/* font-size: 62.5%; */
+	/* border: 0; */
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -45,16 +45,29 @@ q:before, q:after {
 *{
     box-sizing:border-box;
     max-width:100%;
-    
 }
 
 html{
-    font-family: 'Roboto Mono', monospace;
     font-size: 62.5%;
 }
 
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section{
+    padding:4% 0;
+    width: 90%;
+    margin:0 auto;
+}
+
+.bold{
+    font-weight: bold;
+}
 nav{
-    padding: 4%;
+    padding: 2% 0;
     /* border: 5px dotted blue; */
     justify-content: space-evenly;
     width:100%;
@@ -86,9 +99,9 @@ nav a{
 .top{
     position: relative;
 }
-.top h1{
+h1{
     font-family: 'Chelsea Market', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .left, .right{
@@ -122,12 +135,11 @@ nav a{
     /* border: 5px dotted blue; */
 }
 .graphics-container{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30%;
+    margin: 5% auto;
     text-align: center;
-    padding:2%;
-    font-size: 1.2rem;
+    /* padding:2%; */
+    /* font-size: 1.2rem; */
 }
 
 .graphics-container img{
@@ -136,12 +148,18 @@ nav a{
     /* border: 4px dashed red; */
 }
 
+.bkgrndimg{
+    background-image: url('assets/footer_img.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width:100%;
+}
+
 .footer{
     background-color: #F9E7DC;
     width:100%;
 }
 
-.footer img{
-    height:10vh;
-    width:auto
-}
+
